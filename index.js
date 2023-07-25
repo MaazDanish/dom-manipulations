@@ -8,6 +8,16 @@ addItems.style.color = 'green';
 
 let item = document.querySelectorAll('.list-group-item');
 console.log(item[2]);
-item[2].style.color = 'green';
-item.style.fontWeight = 'bolder';
+//  by this we cn give style to single element using child
+// item[2].style.color = 'green';
+// item[0].style.fontWeight = 'bold';
+
+//  to give the style all elements is a single use for loop
+for(let i=0; i<item.length; i++){
+    item[i].style.background ='yellow';
+    item[i].style.color='green';
+    item[i].style.fontWeight='bolder';
+}
+let items = document.getElementsByTagName('li');
+
 
