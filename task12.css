@@ -83,3 +83,12 @@
     float: right;
     cursor: pointer;
   }
+  .btn-update{
+    position: relative;
+    left: 30px;
+    background-color:rgb(118, 118, 255);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }

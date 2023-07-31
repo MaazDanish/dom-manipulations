@@ -28,14 +28,27 @@ function showToDisplay(userData) {
 
         const deleteButton = document.createElement('input');
         deleteButton.type = 'button';
-        deleteButton.value = 'Delete';
+        deleteButton.value = 'X';
         deleteButton.className = 'btn-danger';
+
+        const updateButton = document.createElement('input');
+        updateButton.type = 'button';
+        updateButton.className = 'btn-update';
+        updateButton.value = 'Edit';
 
         deleteButton.onclick = () => {
             localStorage.removeItem(userData.userName);
             userlist.remove(li);
         };
 
+		updateButton.onclick = () =>{
+			localStorage.removeItem(userData.userName);
+            userlist.remove(li);
+			document.querySelector('#name').value = userData.userName;
+			document.querySelector('#email').value = userData.mail; 
+		};
+    
+		li.appendChild(updateButton);
         li.appendChild(deleteButton);
         userlist.appendChild(li);
         
