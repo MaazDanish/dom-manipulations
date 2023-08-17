@@ -58,6 +58,7 @@
     color: #fff;
     border-radius: 5px;
     margin: 5px 0;
+    cursor: pointer;
   }
   
   .btn:hover {
@@ -84,8 +85,7 @@
     cursor: pointer;
   }
   .btn-update{
-    position: relative;
-    left: 30px;
+    float: right;
     background-color:rgb(118, 118, 255);
     color: white;
     border: none;
